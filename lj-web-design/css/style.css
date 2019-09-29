@@ -15,9 +15,10 @@ body{
 }
 
 ul{
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 10;
 }
+
 
 .button_1{
     height: 38px;
@@ -144,15 +145,34 @@ header a:hover{
     width:90px;
 }
 
+#boxes1{
+    margin-top: 20px;
+}
+
+#boxes1 .box1{
+    
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    border: #cccccc solid 1px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#boxes1 .box1 img{
+    width:100%;
+}
+
 /* Sidebar */
 
 aside#sidebar{
     float: right;
     width:30%;
-    margin-top:10px;
+    margin-top:50px;
 }
 
-aside#sidebar .quote input, aside#sidebar .quote textarea{
+aside#sidebar .quote input, aside#sidebar .quote textarea, aside#sidebar .quote select{
     width:90%;
     padding: 5px;
 }
@@ -161,6 +181,14 @@ aside#sidebar .quote input, aside#sidebar .quote textarea{
 article#main-col{
     float: left;
     width: 65%;
+}
+article.main-col2{
+    float: left;
+    width: 100%;
+}
+
+#info {
+    text-align: center;
 }
 
 /* Services */
@@ -173,12 +201,32 @@ ul#services li{
     background: #e6e6e6; 
 }
 
+.service {
+    text-align: center
+}
+
+/* Projects */
+article#main2-col{
+    float: left;
+    width: 100%;
+}
+
+
+.alert{
+    text-align: center;
+    padding:10px;
+    background:#79c879;
+    color:#fff;
+    margin-bottom:10px;
+    display:none;
+}
+
 /* Footer */
 
 footer{
     padding: 20px;
     margin-top: 20px;
-    color:#ffffff;
+    color:hsl(0, 0%, 100%);
     background-color: #e8491d;
     text-align: center;
 }
@@ -191,6 +239,7 @@ footer{
     #newsletter h1,
     #newsletter form,
     #boxes .box,
+    #boxes1 .box1,
     article#main-col,
     aside#sidebar{
         float:none;
@@ -206,12 +255,33 @@ footer{
         margin-top: 40px;
     }
 
-    #newsletter button, .quote button{
+    #newsletter button, .quote button_01{
         display: block;
         width: 100%;
     }
     #newsletter form input[type="email"]{
         width: 100%;
         margin-bottom: 5px;
+    }
+    aside#sidebar .quote input, aside#sidebar .quote textarea, aside#sidebar .quote select{
+        width:70%;
+        padding: 5px;
+    }
+    #boxes1{
+        margin-top: 20px;
+    }
+    
+    #boxes1 .box1{
+        float: none;
+        text-align: center;
+        width: 94%;
+        padding: 10px;
+        border: #cccccc solid 1px;
+        margin-bottom: 5px;
+        
+    }
+    
+    #boxes1 .box1 img{
+        width:100%;
     }
 }

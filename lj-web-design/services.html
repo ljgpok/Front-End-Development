@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,11 @@
     <meta name="keywords" content="Affordable and professional web design">
     <meta name="description" content="web design, affordable web design and professional web design">
     <meta name="author" content="Lal Gurung">
-    <title>Lal Web Design | Services</title>
+    <title>LJ Web Design | Services</title>
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
     <script src="main.js"></script>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -27,7 +29,7 @@
             </nav>
         </div>
     </header>
-
+    <!-- 
     <section id="newsletter">
         <div class="container">
             <h1>Subscribe to our Newsletter</h1>
@@ -36,47 +38,59 @@
                 <button type="submit" class="button_1">Subscribe</button>
             </form>
         </div>
-    </section>
+    </section> -->
 
     <section id="main">
         <div class="container">
             <article id="main-col">
-                <h1 class="page-title">Services</h1>
                 <ul id="services">
+                    <h1 class="page-title">Services</h1>
                     <li>
                         <h3>Web Design/Front-End Development</h3>
-                        <p>We will provide beautiful and elegant websites for personnals and companies. Using technologies like HTML5, CSS3, 
+                        <p>We will provide beautiful and elegant websites for personnals and companies. Using
+                            technologies like HTML5, CSS3,
                             Javascript, Bootstrap, MaterializeCSS, ReactJS.</p>
                         <p>Pricing: €10 - €100</p>
                     </li>
                     <li>
                         <h3>Back-End Developemt Solutions</h3>
-                        <p>We will develop robust, scalable and cloud-ready backend API. Technologies: NodeJS, Python, PHP </p>
-                        <p>Pricing: €100 - €200</p>
+                        <p>We will develop robust, scalable and cloud-ready backend API. Technologies: NodeJS, Python,
+                            PHP </p>
+                        <p>Pricing: €100 - €500</p>
                     </li>
                     <li>
                         <h3>Full Stack Web Development</h3>
-                        <p>We will develop a complete website from front to back end using technology stacks like MERN, Django/Python, Laravel/PHP</p>
+                        <p>We will develop a complete website from front to back end using technology stacks like MERN,
+                            Django/Python, Laravel/PHP</p>
                         <p>Pricing: €500 - €1000</p>
-                    </li>    
+                    </li>
                 </ul>
             </article>
 
             <aside id="sidebar">
+                <div class="alert">Your message has been sent</div>
                 <div class="dark">
                     <h3>Get A Quote</h3>
-                    <form class="quote">
+                    <form id="contactForm" class="quote">
                         <div>
                             <label>Name</label><br>
-                            <input type="text" placeholder="Name">
+                            <input type="text" name="name" id="name" required>
                         </div>
                         <div>
                             <label>Email</label><br>
-                            <input type="text" placeholder="Email Address">
+                            <input type="text" name="email" id="email" required>
+                        </div>
+                        <div>
+                            <label>Service</label><br>
+                            <select id="service">
+                                <option value="front">Front-End Development</option>
+                                <option value="back">Back-End Development</option>
+                                <option value="full">Full Stack Development</option>
+                            </select>
                         </div>
                         <div>
                             <label>Message</label><br>
-                            <textarea placeholder="Message"></textarea>
+                            <textarea name="message" id="message"></textarea>
                         </div>
                         <button class="button_1" type="submit">Send</button>
                     </form>
@@ -88,5 +102,10 @@
     <footer>
         <p>LJ Web Design &copy; 2019</p>
     </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="/main.js"></script>
 </body>
+
 </html>
